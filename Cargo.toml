@@ -7,6 +7,7 @@ description = "The perfect smoother: A discrete-time version of spline smoothing
 keywords = ["smoothing", "signal-processing"]
 categories = ["algorithms", "mathematics", "science"]
 exclude = ["/papers"]
+license-file = "LICENSE"
 
 [dependencies]
 nalgebra = "0.32"
