@@ -1,0 +1,15 @@
+[package]
+name = "whittaker_smoother"
+version = "0.1.0"
+edition = "2021"
+authors = ["MathisWellmann <wellmannmathis@gmail.com>"]
+description = "The perfect smoother: A discrete-time version of spline smoothing for equally spaced data."
+keywords = ["smoothing", "signal-processing"]
+categories = ["algorithms", "mathematics", "science"]
+exclude = ["/papers"]
+
+[dependencies]
+nalgebra = "0.32"
+
+[dev-dependencies]
+plotters = "0.3"
