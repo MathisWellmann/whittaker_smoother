@@ -35,6 +35,16 @@ To use this smoother in you project, add this to your `Cargo.toml`:
 whittaker_smoother = "0.1"
 ```
 
+Now you can use the smoothing function as such:
+```rust
+// Here we use the WOOD_DATASET, but this can be any series that you would like to smooth
+let raw = Vec::from_iter(WOOD_DATASET.iter().map(|v| *v as f64));
+let lambda = 2e4;
+let order = 3;
+let smoothed = whittaker_smoother(&raw, lambda, order).unwrap();
+```
+And BAM, that's it! There is you perfectly smoothed series.
+
 ### Further Reading:
 See the [papers](./papers/) folder for two papers showing additional details of the method.
 
