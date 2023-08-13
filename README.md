@@ -50,6 +50,11 @@ See the [papers](./papers/) folder for two papers showing additional details of 
 
 This implementation was inspired by [A python implementation](https://github.com/mhvwerts/whittaker-eilers-smoother).
 
+### Potential Upgrades:
+- Add benchmarks
+- Use sparse matrices if available
+- Add function for computing the optimal lambda based on cross-validation (See eilers2003)
+
 ### License
 Copyright (C) 2020  <Mathis Wellmann wellmannmathis@gmail.com>
 
