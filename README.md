@@ -36,7 +36,9 @@ whittaker_smoother = "0.1"
 ```
 
 Now you can use the smoothing function as such:
-```rust
+```ignore
+use whittaker_smoother::whittaker_smoother;
+
 // Here we use the WOOD_DATASET, but this can be any series that you would like to smooth
 let raw = Vec::from_iter(WOOD_DATASET.iter().map(|v| *v as f64));
 let lambda = 2e4;
