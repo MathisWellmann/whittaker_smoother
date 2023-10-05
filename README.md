@@ -28,6 +28,8 @@ The savitzky-golay filter does have a nice flat passband,
 but suffers from unsatisfactory high-frequency noise, which is not sufficiently suppressed. 
 This is a particular problem when the derivative of the data is of importance.
 
+However, this smoother takes future values into account and therefore suffers from a look-ahead bias.
+
 ### Usage
 To use this smoother in you project, add this to your `Cargo.toml`:
 ```toml
